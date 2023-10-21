@@ -1,3 +1,25 @@
+# REVANCED AUTO BUILD
+
+- This is a fork repo of j-hc's one. Auto build RV, RVX, ReX and send changelog + built files on my [Telegram channel](https://t.me/revanced_builds) using [nikhilbadyal action](https://github.com/nikhilbadyal/ghactions)
+- Auto sync with j-hc's repo using [Fork-Sync-With-Upstream-action](https://github.com/aormsby/Fork-Sync-With-Upstream-action/tree/main/)
+
+<!-- Customise:
+
+| Variable | Description |
+| :--- | :--- |
+| USER_CONFIG | Your config.toml content |
+| USER_OPTIONS | Your options.json content |
+| USER_OPTIONS | Your options.json content |
+
+| Secret | Description |
+| :--- | :--- |
+| TELEGRAM_API_ID | Telegram api id |
+| TELEGRAM_API_HASH | Telegram api hash |
+| BOT_TOKEN | Telegram bot token |
+| CHAT_ID | Telegram chat id |
+| TELEGRAM_GROUP_CHAT_ID | Telegram group chat id |
+| TELEGRAM_GROUP_LINKNAME | Telegram group linkname *(like: KevinNitro_RV)*| -->
+
 #### ⚠️ Do not download modules from 3rd party sources like random websites you found on Google. There are many that uses my modules and impersonates ReVanced.
 
 # ReVanced Magisk Module

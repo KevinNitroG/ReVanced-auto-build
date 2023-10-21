@@ -30,10 +30,22 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      - name: Kevin Nitro customise
+      - name: User customise
         run: |
-          mv KevinNitro_config.toml config.toml
-          mv KevinNitro_options.json options.json
+          mv user_config.toml config.toml
+          mv user_options.json options.json
+
+      - name: User customise in Vars
+        if: ${{ vars.USER_CONFIG || vars.USER_OPTIONS }}
+        run: |
+          USER_CONFIG="${{ vars.USER_CONFIG }}"
+          USER_OPTIONS="${{ vars.USER_OPTIONS }}"
+          if [ ! -z "$USER_CONFIG" ]; then
+            echo "$USER_CONFIG" > config.toml
+          fi
+          if [ ! -z "$USER_OPTIONS" ]; then
+            echo "$USER_OPTIONS" > options.json
+          fi
 
       - name: Update config
         if: ${{ inputs.from_ci }}
@@ -119,12 +131,12 @@ jobs:
 
       - name: Report to Telegram
         env:
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         if: env.TG_TOKEN != null
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@KevinNitro_RV"
+          TG_CHAT="@${{ secrets.TELEGRAM_GROUP_LINKNAME }}"
           NL=$'\n'
           APKS=""
           MODULES=""
