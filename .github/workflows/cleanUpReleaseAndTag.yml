@@ -7,11 +7,12 @@ permissions: write-all
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  USERNAME: ${{ secrets.MY_USERNAME }}
+  EMAIL: ${{ secrets.MY_EMAIL }}
 
 jobs:
   Cleanup_Releases_and_Tags:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - uses: dev-drprasad/delete-older-releases@master
         with:
@@ -23,7 +24,16 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Delete remote tags
-        run: git push origin main --delete $(git tag -l)
+        run: |
+          #!/bin/bash
+
+          tags=$(git tag -l)
+
+          for tag in $tags
+          do
+              echo "Deleting tag: $tag"
+              git push --delete origin $tag
+          done
 
       - name: Github commit & push
         continue-on-error: true
