@@ -21,14 +21,13 @@ jobs:
           delete_tags: true
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
 
       - name: Delete remote tags
         run: |
-          #!/bin/bash
-
           tags=$(git tag -l)
-
           for tag in $tags
           do
               echo "Deleting tag: $tag"
