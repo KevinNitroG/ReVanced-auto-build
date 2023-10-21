@@ -6,8 +6,13 @@ on:
         type: boolean
         required: false
         default: true
-
+  watch:
+    types: [started]
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   run:
@@ -24,6 +29,11 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
+
+      - name: Kevin Nitro customise
+        run: |
+          mv KevinNitro_config.toml config.toml
+          mv KevinNitro_options.json options.json
 
       - name: Update config
         if: ${{ inputs.from_ci }}
@@ -114,7 +124,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@rvc_magisk"
+          TG_CHAT="@KevinNitro_RV"
           NL=$'\n'
           APKS=""
           MODULES=""

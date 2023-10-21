@@ -1,0 +1,260 @@
+logging-to-file = false      # enables logging of every patch process to a seperate file
+enable-magisk-update = false # set this to false if you do not want to receive updates for the module in magisk app
+patches-source = "ReVanced/revanced-patches"
+integrations-source = "ReVanced/revanced-integrations"
+# patches-source = "YT-Advanced/ReX-patches"
+# integrations-source = "YT-Advanced/ReX-integrations"
+parallel-jobs = 1
+rv-brand = "rv"
+
+[YouTube-ReVanced]
+app-name= "youtube"
+rv-brand = "rv"
+build-mode = "apk"
+included-patches = "'Remove player controls background'"
+excluded-patches = "'Theme' 'Custom branding'"
+version = "auto"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Youtube-Music-ReVanced]
+app-name= "music-youtube"
+rv-brand = "rv"
+build-mode = "apk"
+excluded-patches = "'Permanent repeat' 'Permanent shuffle'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+apkmirror-arch = "arm64-v8a"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+
+[YouTube-ReVanced-Extended]
+enabled = true
+app-name= "youtube"
+rv-brand = "rvx"
+version = "auto"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+# cli-source = "inotia00/revanced-cli"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding YouTube name'"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+
+[YouTube-ReVanced-Extended-latest]
+enabled = false
+app-name= "youtube-latest"
+rv-brand = "rvx"
+version = "latest"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+# cli-source = "inotia00/revanced-cli"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding YouTube name'"
+
+[Youtube-Music-ReVanced-Extended]
+enabled = true
+app-name= "music-youtube"
+rv-brand = "rvx"
+version = "latest"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+# cli-source = "inotia00/revanced-cli"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+apkmirror-arch = "arm64-v8a"
+excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
+
+[YouTube-ReVanced-eXtended]
+enabled = true
+app-name= "youtube"
+rv-brand = "rex"
+version = "auto"
+patches-source = "YT-Advanced/ReX-patches"
+integrations-source = "YT-Advanced/ReX-integrations"
+# cli-source = "inotia00/revanced-cli"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding YouTube name'"
+
+[YouTube-ReVanced-eXtended-latest]
+enabled = false
+app-name= "youtube-latest"
+rv-brand = "rex"
+version = "latest"
+patches-source = "YT-Advanced/ReX-patches"
+integrations-source = "YT-Advanced/ReX-integrations"
+# cli-source = "inotia00/revanced-cli"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding YouTube name'"
+
+[Youtube-Music-ReVanced-eXtended]
+enabled = true
+app-name= "music-youtube"
+rv-brand = "rex"
+version = "latest"
+patches-source = "YT-Advanced/ReX-patches"
+integrations-source = "YT-Advanced/ReX-integrations"
+# cli-source = "inotia00/revanced-cli"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+apkmirror-arch = "arm64-v8a"
+excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
+
+[Youtube-RVX-Android-6-7]
+enabled = false
+app-name = "youtube-a-6-7"
+rv-brand = "rvx"
+version = "17.34.36"
+patches-source = "kitadai31/revanced-patches-android6-7"
+integrations-source = "kitadai31/revanced-integrations"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+apkmirror-arch = "universal"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'Custom branding YouTube name'"
+
+[Youtube-Music-Anroid-5-6]
+enabled = false
+app-name = "music-youtube-a-5-6"
+rv-brand = "rvx"
+version = "6.20.51"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+# cli-source = "inotia00/revanced-cli"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+apkmirror-arch = "arm64-v8a"
+excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
+
+[Twitter]
+enabled = false
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/twitter-inc/twitter"
+# uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Twitch]
+enabled = false
+uptodown-dlurl = "https://twitch.en.uptodown.com/android"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/tv.twitch.android.app"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Reddit]
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+# patches-source = "revanced/revanced-patches"
+# integrations-source = "revanced/revanced-integrations"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+
+[Lightroom]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom"
+apkmirror-arch = "arm64-v8a + x86_64"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Messenger-Mod-Feats]
+apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
+apkmirror-arch = "arm64-v8a"
+apkmirror-dpi = "560-640dpi"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Messenger-Remove-ADS]
+apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
+apkmirror-arch = "arm64-v8a"
+apkmirror-dpi = "560-640dpi"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+excluded-patches = "'Disable typing indicator' 'Disable switching emoji to sticker'"
+
+[TikTok-Global-Musically]
+enabled = false
+app-name= "tiktok-global-musically"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
+uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[TikTok-Asia-Trill]
+enabled = true
+app-name= "tiktok-asia-trill"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Spotify]
+enabled = false
+app-name= "spotify"
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Spotify-Lite]
+enabled = false
+app-name= "spotify-lite"
+uptodown-dlurl = "https://spotify-lite.en.uptodown.com/android"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Nyx-Music-Player]
+enabled = false
+app-name= "nyx-music-player"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/awedea/nyx-music-player"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+apkmirror-arch = "arm64-v8a"
+
+[Duolingo]
+enabled = false
+app-name= "duolingo"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/duolingo/duolingo-duolingo/"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[WarnWetter]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/deutscher-wetterdienst/warnwetter/"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Windyapp]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/windy-weather-world-inc/windy-wind-weather-forecast/"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[IconPackStudio]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[TickTick]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/appest-inc/ticktick-to-do-list-with-reminder-day-planner/"
+apkmirror-arch = "arm64-v8a"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Tasker]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/joaomgcd/tasker/"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Photomath]
+enabled = false
+apkmonk-dlurl = "https://www.apkmonk.com/app/com.microblink.photomath/"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
