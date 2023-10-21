@@ -1,7 +1,9 @@
-logging-to-file = false      # enables logging of every patch process to a seperate file
+logging-to-file = true       # enables logging of every patch process to a seperate file
 enable-magisk-update = false # set this to false if you do not want to receive updates for the module in magisk app
-patches-source = "ReVanced/revanced-patches"
-integrations-source = "ReVanced/revanced-integrations"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+# patches-source = "ReVanced/revanced-patches"
+# integrations-source = "ReVanced/revanced-integrations"
 # patches-source = "YT-Advanced/ReX-patches"
 # integrations-source = "YT-Advanced/ReX-integrations"
 parallel-jobs = 1
@@ -148,11 +150,19 @@ uptodown-dlurl = "https://twitch.en.uptodown.com/android"
 patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
 
-[Reddit]
+[Reddit-Revanced-Extended]
+app-name = "reddit"
+rv-brand = "rvx"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
-# patches-source = "revanced/revanced-patches"
-# integrations-source = "revanced/revanced-integrations"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+
+[Reddit-Revanced]
+app-name = "reddit"
+rv-brand = "rv"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
 # uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 
