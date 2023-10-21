@@ -31,6 +31,7 @@ jobs:
           target_repo_token: ${{ secrets.GITHUB_TOKEN }}
           upstream_sync_repo: j-hc/revanced-magisk-module
           upstream_sync_branch: main
+          upstream_pull_args: --unshallow
 
           # Set test_mode true to run tests instead of the true action!!
           test_mode: false
