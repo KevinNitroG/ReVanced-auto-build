@@ -4,7 +4,8 @@ YouTube-ReVanced-Extended: 18.40.34
 Youtube-Music-ReVanced-Extended: 6.23.54  
 YouTube-ReVanced-eXtended: 18.31.40  
 Youtube-Music-ReVanced-eXtended: 6.23.54  
-Reddit: 2023.41.1  
+Reddit-Revanced-Extended: 2023.41.1  
+Reddit-Revanced: 2023.41.1  
 Messenger-Mod-Feats: 431.1.0.35.116  
 Messenger-Remove-ADS: 431.1.0.35.116  
 TikTok-Asia-Trill: 30.8.4  
