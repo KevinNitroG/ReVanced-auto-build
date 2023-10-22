@@ -5,11 +5,11 @@ env:
   # WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
   WORKFLOW_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   UPSTREAM_BRANCH: "main"
-  DOWNSTREAM_BRANCH: "main"
+  DOWNSTREAM_BRANCH: "master"
 
 on:
   schedule:
-    - cron: '0 20 * * *'
+    - cron: "0 20 * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,8 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync Upstream
-        uses: dabreadman/sync-upstream-repo@v1.3.0
-        with: 
+        uses: dabreadman/sync-upstream-repo@master
+        with:
           upstream_repo: ${{ env.UPSTREAM_URL }}
           upstream_branch: ${{ env.UPSTREAM_BRANCH }}
           downstream_branch: ${{ env.DOWNSTREAM_BRANCH }}
