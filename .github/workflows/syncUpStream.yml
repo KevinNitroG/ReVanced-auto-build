@@ -36,6 +36,8 @@ jobs:
           git pull upstream main
           git add .
           git commit -m "✅ Merge main branch from j-hc"
+          git config --global user.email "kevinnitro@duck.com"
+          git config --global user.name "KevinNitroG"
           git tag -d main
           git push origin main
 
