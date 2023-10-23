@@ -1,15 +1,15 @@
 name: Sync Upstream
 
-env:
-  UPSTREAM_URL: "https://github.com/j-hc/revanced-magisk-module.git"
-  # WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
-  WORKFLOW_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  UPSTREAM_BRANCH: "main"
-  DOWNSTREAM_BRANCH: "master"
+# env:
+#   UPSTREAM_URL: "https://github.com/j-hc/revanced-magisk-module.git"
+#   # WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+#   WORKFLOW_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#   UPSTREAM_BRANCH: "main"
+#   DOWNSTREAM_BRANCH: "main"
 
 on:
   schedule:
-    - cron: '0 20 * * *'
+    - cron: "0 20 * * *"
   workflow_call:
   workflow_dispatch:
 
@@ -17,10 +17,26 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      # - name: Sync Upstream
+      #   uses: dabreadman/sync-upstream-repo@v1.3.0
+      #   with:
+      #     upstream_repo: ${{ env.UPSTREAM_URL }}
+      #     upstream_branch: ${{ env.UPSTREAM_BRANCH }}
+      #     downstream_branch: ${{ env.DOWNSTREAM_BRANCH }}
+      #     token: ${{ env.WORKFLOW_TOKEN }}
+
+      - name: Checkout
+        uses: actions/checkout@main
+
       - name: Sync Upstream
-        uses: dabreadman/sync-upstream-repo@v1.3.0
-        with: 
-          upstream_repo: ${{ env.UPSTREAM_URL }}
-          upstream_branch: ${{ env.UPSTREAM_BRANCH }}
-          downstream_branch: ${{ env.DOWNSTREAM_BRANCH }}
-          token: ${{ env.WORKFLOW_TOKEN }}
+        run: |
+          git remote add upstream https://github.com/j-hc/revanced-magisk-module.git
+          git pull upstream main
+          git add .
+          git commit -m "✅ Merge main branch from j-hc"
+          git tag -d main
+          git push origin main
+
+  ci:
+    needs: sync
+    uses: ./.github/workflows/ci.yml
