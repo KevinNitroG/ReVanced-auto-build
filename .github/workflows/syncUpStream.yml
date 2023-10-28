@@ -39,7 +39,6 @@ jobs:
           git fetch upstream
           git checkout main
           git merge upstream/main
-          git commit -am "✅ Merge main branch from j-hc"
           git tag -d main
           git push origin/main
 
