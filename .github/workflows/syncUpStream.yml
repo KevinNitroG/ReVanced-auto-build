@@ -27,11 +27,16 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@main
+        with:
+          fetch-depth: 0
 
       - name: Sync Upstream
+        continue-on-error: true
         run: |
           git remote add upstream https://github.com/j-hc/revanced-magisk-module.git
           git pull upstream main
+          git config --global user.email "kevinnitro@duck.com"
+          git config --global user.name "KevinNitroG"
           git add .
           git commit -m "✅ Merge main branch from j-hc"
           git tag -d main
