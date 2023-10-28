@@ -2,6 +2,7 @@ YouTube-ReVanced: 18.38.44
 Youtube-Music-ReVanced: 6.25.53  
 YouTube-ReVanced-Extended: 18.41.39  
 Youtube-Music-ReVanced-Extended: 6.25.53  
+Twitter: 10.13.1-release.0  
 Reddit-Revanced-Extended: 2023.42.0  
 Reddit-Revanced: 2023.42.0  
 Messenger-Mod-Feats: 432.0.0.39.118  
