@@ -42,8 +42,8 @@ integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding YouTube name'"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding name YouTube'"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [YouTube-ReVanced-Extended-latest]
@@ -56,8 +56,8 @@ integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding YouTube name'"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding name YouTube'"
 
 [Youtube-Music-ReVanced-Extended]
 enabled = true
@@ -82,8 +82,8 @@ integrations-source = "YT-Advanced/ReX-integrations"
 # cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding YouTube name'"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding name YouTube'"
 
 [YouTube-ReVanced-eXtended-latest]
 enabled = false
@@ -95,8 +95,8 @@ integrations-source = "YT-Advanced/ReX-integrations"
 # cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding YouTube name'"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding name YouTube'"
 
 [Youtube-Music-ReVanced-eXtended]
 enabled = false
@@ -120,8 +120,8 @@ patches-source = "kitadai31/revanced-patches-android6-7"
 integrations-source = "kitadai31/revanced-integrations"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 apkmirror-arch = "universal"
-excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'Custom branding YouTube name'"
+excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'Custom branding name YouTube'"
 
 [Youtube-Music-Anroid-5-6]
 enabled = false
@@ -137,7 +137,7 @@ apkmirror-arch = "arm64-v8a"
 excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
 
 [Twitter]
-enabled = false
+enabled = true
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitter-inc/twitter"
 # uptodown-dlurl = "https://twitter.en.uptodown.com/android"
