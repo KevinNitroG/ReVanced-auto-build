@@ -15,6 +15,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: User customise
+        run: |
+          mv user_config.toml config.toml
+          mv user_options.json options.json
+
       - name: Should build?
         id: should_build
         shell: bash

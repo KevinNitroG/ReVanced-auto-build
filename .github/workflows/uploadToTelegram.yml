@@ -1,8 +1,5 @@
 name: Upload to Telegram
 on:
-  workflow_run:
-    workflows: [Build Modules, CI]
-    types: completed
   workflow_call:
   workflow_dispatch:
 

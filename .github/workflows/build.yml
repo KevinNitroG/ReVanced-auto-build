@@ -173,3 +173,8 @@ jobs:
           name: logs
           path: logs
           if-no-files-found: ignore
+
+  uploadTele:
+    name: Upload files to Telegram
+    needs: run
+    uses: ./.github/workflows/build.yml
