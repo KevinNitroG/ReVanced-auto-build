@@ -47,12 +47,6 @@ jobs:
     outputs:
       SHOULD_BUILD: ${{ steps.should_build.outputs.SHOULD_BUILD }}
 
-  # syncUpStream:
-  #   permissions: write-all
-  #   needs: check
-  #   uses: ./.github/workflows/syncUpStream.yml
-  #   if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
-
   build:
     permissions: write-all
     needs: check
@@ -64,4 +58,4 @@ jobs:
     name: Upload files to Telegram
     needs: build
     if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
-    uses: ./.github/workflows/build.yml
+    uses: ./.github/workflows/uploadToTelegram.yml
