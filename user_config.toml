@@ -9,32 +9,9 @@ integrations-source = "inotia00/revanced-integrations"
 parallel-jobs = 1
 rv-brand = "rv"
 
-[YouTube-ReVanced]
-app-name= "youtube"
-rv-brand = "rv"
-build-mode = "apk"
-included-patches = "'Remove player controls background'"
-excluded-patches = "'Theme' 'Custom branding'"
-version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-
-[Youtube-Music-ReVanced]
-app-name= "music-youtube"
-rv-brand = "rv"
-build-mode = "apk"
-excluded-patches = "'Permanent repeat' 'Permanent shuffle'"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-apkmirror-arch = "arm64-v8a"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-
 [YouTube-ReVanced-Extended]
 enabled = true
-app-name= "youtube"
+app-name= "1-youtube"
 rv-brand = "rvx"
 version = "auto"
 patches-source = "inotia00/revanced-patches"
@@ -46,22 +23,9 @@ excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify B
 included-patches = "'MaterialYou' 'Custom branding name YouTube'"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
-[YouTube-ReVanced-Extended-latest]
-enabled = false
-app-name= "youtube-latest"
-rv-brand = "rvx"
-version = "latest"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
-build-mode = "apk"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding name YouTube'"
-
 [Youtube-Music-ReVanced-Extended]
 enabled = true
-app-name= "music-youtube"
+app-name= "1-music-youtube"
 rv-brand = "rvx"
 version = "latest"
 patches-source = "inotia00/revanced-patches"
@@ -72,9 +36,32 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-arch = "arm64-v8a"
 excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
 
+[YouTube-ReVanced]
+app-name= "2-youtube"
+rv-brand = "rv"
+build-mode = "apk"
+included-patches = "'Remove player controls background'"
+excluded-patches = "'Theme' 'Custom branding'"
+version = "auto"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Youtube-Music-ReVanced]
+app-name= "2-music-youtube"
+rv-brand = "rv"
+build-mode = "apk"
+excluded-patches = "'Permanent repeat' 'Permanent shuffle'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+apkmirror-arch = "arm64-v8a"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+
 [YouTube-ReVanced-eXtended]
 enabled = false
-app-name= "youtube"
+app-name= "3-youtube"
 rv-brand = "rex"
 version = "auto"
 patches-source = "YT-Advanced/ReX-patches"
@@ -85,22 +72,9 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
 included-patches = "'MaterialYou' 'Custom branding name YouTube'"
 
-[YouTube-ReVanced-eXtended-latest]
-enabled = false
-app-name= "youtube-latest"
-rv-brand = "rex"
-version = "latest"
-patches-source = "YT-Advanced/ReX-patches"
-integrations-source = "YT-Advanced/ReX-integrations"
-# cli-source = "inotia00/revanced-cli"
-build-mode = "apk"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding name YouTube'"
-
 [Youtube-Music-ReVanced-eXtended]
 enabled = false
-app-name= "music-youtube"
+app-name= "3-music-youtube"
 rv-brand = "rex"
 version = "latest"
 patches-source = "YT-Advanced/ReX-patches"
@@ -113,7 +87,7 @@ excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Re
 
 [Youtube-RVX-Android-6-7]
 enabled = false
-app-name = "youtube-a-6-7"
+app-name = "1-youtube-a-6-7"
 rv-brand = "rvx"
 version = "17.34.36"
 patches-source = "kitadai31/revanced-patches-android6-7"
@@ -125,7 +99,7 @@ included-patches = "'Custom branding name YouTube'"
 
 [Youtube-Music-Anroid-5-6]
 enabled = false
-app-name = "music-youtube-a-5-6"
+app-name = "1-music-youtube-a-5-6"
 rv-brand = "rvx"
 version = "6.20.51"
 patches-source = "inotia00/revanced-patches"
@@ -136,8 +110,57 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-arch = "arm64-v8a"
 excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
 
+[Messenger-Mod-Feats]
+app-name = "4-messenger-feats"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
+apkmirror-arch = "arm64-v8a"
+apkmirror-dpi = "560-640dpi"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Messenger-Remove-ADS]
+app-name = "4-messenger-ads"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
+apkmirror-arch = "arm64-v8a"
+apkmirror-dpi = "560-640dpi"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+excluded-patches = "'Disable typing indicator' 'Disable switching emoji to sticker'"
+
+[TikTok-Global-Musically]
+enabled = false
+app-name= "5-tiktok-global-musically"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
+uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[TikTok-Asia-Trill]
+enabled = true
+app-name= "5-tiktok-asia-trill"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Reddit-Revanced-Extended]
+app-name = "6-reddit"
+rv-brand = "rvx"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+
+[Reddit-Revanced]
+app-name = "6-reddit"
+rv-brand = "rv"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+
 [Twitter]
 enabled = true
+app-name = "7-twitter"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitter-inc/twitter"
 # uptodown-dlurl = "https://twitter.en.uptodown.com/android"
@@ -151,56 +174,10 @@ uptodown-dlurl = "https://twitch.en.uptodown.com/android"
 patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
 
-[Reddit-Revanced-Extended]
-app-name = "reddit"
-rv-brand = "rvx"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-
-[Reddit-Revanced]
-app-name = "reddit"
-rv-brand = "rv"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-
 [Lightroom]
 enabled = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom"
 apkmirror-arch = "arm64-v8a + x86_64"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-
-[Messenger-Mod-Feats]
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
-apkmirror-arch = "arm64-v8a"
-apkmirror-dpi = "560-640dpi"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-
-[Messenger-Remove-ADS]
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
-apkmirror-arch = "arm64-v8a"
-apkmirror-dpi = "560-640dpi"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-excluded-patches = "'Disable typing indicator' 'Disable switching emoji to sticker'"
-
-[TikTok-Global-Musically]
-enabled = false
-app-name= "tiktok-global-musically"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
-uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-
-[TikTok-Asia-Trill]
-enabled = true
-app-name= "tiktok-asia-trill"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok"
 patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
 
