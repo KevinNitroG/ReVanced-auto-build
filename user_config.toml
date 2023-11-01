@@ -20,7 +20,7 @@ cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding name YouTube'"
+included-patches = "'MaterialYou' 'Custom branding name YouTube' 'Premium heading'"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [Youtube-Music-ReVanced-Extended]
@@ -70,7 +70,7 @@ integrations-source = "YT-Advanced/ReX-integrations"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding name YouTube'"
+included-patches = "'MaterialYou' 'Custom branding name YouTube' 'Premium heading'"
 
 [Youtube-Music-ReVanced-eXtended]
 enabled = false
@@ -95,7 +95,7 @@ integrations-source = "kitadai31/revanced-integrations"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 apkmirror-arch = "universal"
 excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'Custom branding name YouTube'"
+included-patches = "'Custom branding name YouTube' 'Premium heading'"
 
 [Youtube-Music-Anroid-5-6]
 enabled = false
