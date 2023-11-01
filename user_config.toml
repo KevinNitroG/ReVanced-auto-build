@@ -148,6 +148,7 @@ rv-brand = "rvx"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
+cli-source = "inotia00/revanced-cli"
 # uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 
 [Reddit-Revanced]
