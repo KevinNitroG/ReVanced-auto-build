@@ -19,8 +19,8 @@ integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
-included-patches = "'MaterialYou' 'Custom branding name YouTube' 'Premium heading'"
+excluded-patches = "'Custom branding icon YouTube' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
+included-patches = "'MaterialYou' 'Custom branding name YouTube' 'Premium heading' 'Custom package name'"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [Youtube-Music-ReVanced-Extended]
