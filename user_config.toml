@@ -1,9 +1,9 @@
 logging-to-file = true       # enables logging of every patch process to a seperate file
 enable-magisk-update = false # set this to false if you do not want to receive updates for the module in magisk app
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-# patches-source = "ReVanced/revanced-patches"
-# integrations-source = "ReVanced/revanced-integrations"
+# patches-source = "inotia00/revanced-patches"
+# integrations-source = "inotia00/revanced-integrations"
+patches-source = "ReVanced/revanced-patches"
+integrations-source = "ReVanced/revanced-integrations"
 # patches-source = "YT-Advanced/ReX-patches"
 # integrations-source = "YT-Advanced/ReX-integrations"
 parallel-jobs = 1
@@ -34,9 +34,11 @@ cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-arch = "arm64-v8a"
+apkmirror-dpi = "nodpi"
 excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
 
 [YouTube-ReVanced]
+enabled = true
 app-name= "2-youtube"
 rv-brand = "rv"
 build-mode = "apk"
@@ -48,19 +50,21 @@ patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
 
 [Youtube-Music-ReVanced]
+enabled = true
 app-name= "2-music-youtube"
 rv-brand = "rv"
 build-mode = "apk"
 excluded-patches = "'Permanent repeat' 'Permanent shuffle'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-arch = "arm64-v8a"
+apkmirror-dpi = "nodpi"
 patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [YouTube-ReVanced-eXtended]
-enabled = false
+enabled = true
 app-name= "3-youtube"
 rv-brand = "rex"
 version = "auto"
@@ -73,7 +77,7 @@ excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify B
 included-patches = "'MaterialYou' 'Custom branding name YouTube' 'Premium heading'"
 
 [Youtube-Music-ReVanced-eXtended]
-enabled = false
+enabled = true
 app-name= "3-music-youtube"
 rv-brand = "rex"
 version = "latest"
@@ -83,6 +87,7 @@ integrations-source = "YT-Advanced/ReX-integrations"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-arch = "arm64-v8a"
+apkmirror-dpi = "nodpi"
 excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
 
 [Youtube-RVX-Android-6-7]
