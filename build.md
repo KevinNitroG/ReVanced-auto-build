@@ -2,10 +2,9 @@ YouTube-ReVanced-Extended: 19.16.39
 Youtube-Music-ReVanced-Extended: 7.10.51  
 YouTube-ReVanced: 19.16.39  
 Youtube-Music-ReVanced: 7.03.52  
-YouTube-ReVanced-eXtended: 19.07.40  
 Youtube-Music-ReVanced-eXtended: 7.10.51  
-Messenger-Mod-Feats: 467.0.0.37.109  
-Messenger-Remove-ADS: 467.0.0.37.109  
+Messenger-Mod-Feats: 467.1.0.45.109  
+Messenger-Remove-ADS: 467.1.0.45.109  
 TikTok-Asia-Trill: 32.5.3  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
