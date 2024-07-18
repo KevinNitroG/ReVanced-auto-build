@@ -1,10 +1,14 @@
 [
   {
-    "patchName": "Hide layout components",
+    "patchName": "Change version code",
     "options": [
       {
-        "key": "ForceHideVoiceSearchButton",
+        "key": "ChangeVersionCode",
         "value": false
+      },
+      {
+        "key": "VersionCode",
+        "value": "2147483647"
       }
     ]
   },
@@ -61,6 +65,27 @@
     ]
   },
   {
+    "patchName": "GmsCore support",
+    "options": [
+      {
+        "key": "GmsCoreVendorGroupId",
+        "value": "app.revanced"
+      },
+      {
+        "key": "CheckGmsCore",
+        "value": true
+      },
+      {
+        "key": "PackageNameYouTube",
+        "value": "app.rvx.android.youtube"
+      },
+      {
+        "key": "PackageNameYouTubeMusic",
+        "value": "app.rvx.android.apps.youtube.music"
+      }
+    ]
+  },
+  {
     "patchName": "Settings for YouTube Music",
     "options": [
       {
@@ -88,19 +113,6 @@
     ]
   },
   {
-    "patchName": "Change version code",
-    "options": [
-      {
-        "key": "ChangeVersionCode",
-        "value": false
-      },
-      {
-        "key": "VersionCode",
-        "value": 2147483647
-      }
-    ]
-  },
-  {
     "patchName": "Settings for Reddit",
     "options": [
       {
@@ -110,33 +122,11 @@
     ]
   },
   {
-    "patchName": "Custom package name",
-    "options": [
-      {
-        "key": "PackageNameYouTube",
-        "value": "kevinnitro.youtube"
-      },
-      {
-        "key": "PackageNameYouTubeMusic",
-        "value": "kevinnitro.youtube.music"
-      }
-    ]
-  },
-  {
-    "patchName": "Toolbar components",
-    "options": [
-      {
-        "key": "ForceHideVoiceSearchButton",
-        "value": false
-      }
-    ]
-  },
-  {
     "patchName": "Custom Shorts action buttons",
     "options": [
       {
         "key": "IconType",
-        "value": "round"
+        "value": "youtubeoutline"
       }
     ]
   },
@@ -153,7 +143,20 @@
       },
       {
         "key": "RestoreOldSplashAnimation",
-        "value": false
+        "value": true
+      }
+    ]
+  },
+  {
+    "patchName": "Custom package name",
+    "options": [
+      {
+        "key": "PackageNameYouTube",
+        "value": "kevinnitro.youtube"
+      },
+      {
+        "key": "PackageNameYouTubeMusic",
+        "value": "kevinnitro.youtube.music"
       }
     ]
   },
@@ -206,7 +209,7 @@
       },
       {
         "key": "SelectedTranslations",
-        "value": "ar, el-rGR, es-rES, fr-rFR, hu-rHU, it-rIT, ja-rJP, ko-rKR, pl-rPL, pt-rBR, ru-rRU, tr-rTR, uk-rUA, vi-rVN, zh-rCN, zh-rTW"
+        "value": "ar, el-rGR, es-rES, de-rDE, fr-rFR, hu-rHU, it-rIT, ja-rJP, ko-rKR, pl-rPL, pt-rBR, ru-rRU, tr-rTR, uk-rUA, vi-rVN, zh-rCN, zh-rTW"
       },
       {
         "key": "SelectedStringResources",
