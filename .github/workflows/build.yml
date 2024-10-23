@@ -6,9 +6,11 @@ on:
         type: boolean
         required: false
         default: true
+
+  workflow_dispatch:
+
   watch:
     types: [started]
-  workflow_dispatch:
 
 concurrency:
   group: ${{ github.ref }}
@@ -100,8 +102,8 @@ jobs:
           cp -f build.tmp build.md
           get_update_json() {
             echo "{
-            \"version\": \"$1\",
-            \"versionCode\": ${{ steps.next_ver_code.outputs.NEXT_VER_CODE}},
+            \"version\": \"$1 (${{ steps.next_ver_code.outputs.NEXT_VER_CODE }})\",
+            \"versionCode\": ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }},
             \"zipUrl\": \"$2\",
             \"changelog\": \"https://raw.githubusercontent.com/$GITHUB_REPOSITORY/update/build.md\"
           }"
@@ -131,12 +133,12 @@ jobs:
 
       - name: Report to Telegram
         env:
-          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
         if: env.TG_TOKEN != null
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@${{ secrets.TELEGRAM_GROUP_LINKNAME }}"
+          TG_CHAT="@rvc_magisk"
           NL=$'\n'
           APKS=""
           MODULES=""
