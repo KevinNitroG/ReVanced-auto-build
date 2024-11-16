@@ -173,7 +173,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/twitter-inc/twitter"
 patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
 
-[Google Photos]
+[Google-Photos]
 version = "auto"
 app-name = "gphotos"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos/"
