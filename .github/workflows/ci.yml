@@ -14,6 +14,21 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Sync Upstream
+        run: |
+          git config --global user.email "kevinnitro@duck.com"
+          git config --global user.name "KevinNitroG"
+          git remote add upstream https://github.com/j-hc/revanced-magisk-module.git
+          git fetch upstream
+          git merge upstream/main
+          git tag -d main
+          git push origin main
+
+      - name: User customise
+        run: |
+          mv user_config.toml config.toml
+          mv user_options.json options.json
+
       - name: Should build?
         id: should_build
         shell: bash

@@ -9,6 +9,9 @@ on:
 
   workflow_dispatch:
 
+  watch:
+    types: [started]
+
 jobs:
   run:
     permissions: write-all
@@ -24,6 +27,11 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
+
+      - name: User customise
+        run: |
+          mv user_config.toml config.toml
+          mv user_options.json options.json
 
       - name: Update config
         if: ${{ inputs.from_ci }}
@@ -145,3 +153,14 @@ jobs:
           MSG=${MSG:0:9450}
           POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
+
+  upload-tele:
+    name: Upload to Telegram
+    needs: run
+    uses: nikhilbadyal/ghactions/.github/workflows/telegram-uploader.yml@main
+    secrets:
+      TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+      TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      MESSAGE: New RV + RVX + ReX 🦥
