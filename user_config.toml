@@ -3,7 +3,7 @@ enable-magisk-update = false # set this to false if you do not want to receive u
 parallel-jobs = 2
 
 [YouTube-ReVanced-Extended]
-enabled = true
+enabled = false
 app-name = "1-youtube"
 rv-brand = "rvx"
 patches-source = "inotia00/revanced-patches"
@@ -16,7 +16,7 @@ included-patches = "'MaterialYou' 'Custom branding name YouTube' 'Premium headin
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [Youtube-Music-ReVanced-Extended]
-enabled = true
+enabled = false
 app-name = "1-music-youtube"
 rv-brand = "rvx"
 patches-source = "inotia00/revanced-patches"
@@ -24,7 +24,6 @@ integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-arch = "arm64-v8a"
 apkmirror-dpi = "nodpi"
 excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
 
@@ -44,7 +43,6 @@ rv-brand = "rv"
 build-mode = "apk"
 excluded-patches = "'Permanent repeat' 'Permanent shuffle'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-arch = "arm64-v8a"
 apkmirror-dpi = "nodpi"
 patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
@@ -57,7 +55,6 @@ version = "17.34.36"
 patches-source = "kitadai31/revanced-patches-android6-7"
 integrations-source = "kitadai31/revanced-integrations"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-arch = "universal"
 excluded-patches = "'Custom branding icon MMT' 'Custom branding icon Revancify Blue' 'Custom branding icon Revancify Red' 'Force hide player button background' 'Translations' 'Enable debug logging' 'Theme'"
 included-patches = "'Custom branding name YouTube' 'Premium heading'"
 
@@ -71,31 +68,11 @@ integrations-source = "inotia00/revanced-integrations"
 # cli-source = "inotia00/revanced-cli"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-arch = "arm64-v8a"
 excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
-
-[Messenger-Mod-Feats]
-enabled = false
-app-name = "4-messenger-feats"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
-arch = "arm64-v8a"
-apkmirror-dpi = "nodpi"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-
-[Messenger-Remove-ADS]
-enabled = false
-app-name = "4-messenger-ads"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
-arch = "arm64-v8a"
-apkmirror-dpi = "nodpi"
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-excluded-patches = "'Disable typing indicator' 'Disable switching emoji to sticker'"
 
 [TikTok-Global-Musically]
 enabled = false
-app-name = "5-tiktok-global-musically"
+app-name = "4-tiktok-global-musically"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
 uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
 patches-source = "revanced/revanced-patches"
@@ -103,13 +80,14 @@ integrations-source = "revanced/revanced-integrations"
 
 [TikTok-Asia-Trill]
 enabled = true
-app-name = "5-tiktok-asia-trill"
+app-name = "4-tiktok-asia-trill"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok"
 patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
 
 [Reddit-Revanced-Extended]
-app-name = "6-reddit"
+enabled = false
+app-name = "5-reddit"
 rv-brand = "rvx"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
@@ -117,7 +95,8 @@ cli-source = "inotia00/revanced-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
 
 [Twitter]
-app-name = "7-twitter"
+app-name = "6-twitter"
+rv-brand = "rv"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitter-inc/twitter"
 patches-source = "revanced/revanced-patches"
@@ -125,9 +104,28 @@ integrations-source = "revanced/revanced-integrations"
 
 [Google-Photos]
 version = "auto"
-app-name = "8-gphotos"
+rv-brand = "rv"
+app-name = "7-gphotos"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos/"
 included-patches = "'com.google.android.apps.photos.nexus_preload' 'com.google.android.apps.photos.NEXUS_PRELOAD' 'com.google.android.feature.PIXEL_2021_EXPERIENCE' 'com.google.android.feature.PIXEL_2022_EXPERIENCE'"
-arch = "both"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+
+[Messenger]
+enabled = true
+rv-brand = "rv"
+app-name = "8-messenger"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
+apkmirror-dpi = "nodpi"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
+excluded-patches = "'Disable typing indicator' 'Disable switching emoji to sticker'"
+
+[Facebook]
+enabled = true
+rv-brand = "rv"
+app-name = "8-facebook"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/facebook"
+apkmirror-dpi = "nodpi"
 patches-source = "revanced/revanced-patches"
 integrations-source = "revanced/revanced-integrations"
