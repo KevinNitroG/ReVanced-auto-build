@@ -14,6 +14,7 @@ included-patches = "'MaterialYou' 'Custom branding name YouTube' 'Premium headin
 integrations-source = "inotia00/revanced-integrations"
 patches-source = "inotia00/revanced-patches"
 rv-brand = "rvx"
+version = "auto"
 
 [Youtube-Music-ReVanced-Extended]
 app-name = "1-music-youtube"
@@ -26,6 +27,7 @@ build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-dpi = "nodpi"
 excluded-patches = "'Amoled' 'Custom branding icon MMT' 'Custom branding icon Revancify blue' 'Custom branding icon Revancify red'"
+version = "auto"
 
 [YouTube-ReVanced]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
@@ -34,6 +36,7 @@ build-mode = "apk"
 excluded-patches = "'Theme' 'Custom branding'"
 included-patches = "'Remove player controls background'"
 rv-brand = "rv"
+version = "auto"
 
 [Youtube-Music-ReVanced]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
@@ -45,6 +48,7 @@ excluded-patches = "'Permanent repeat' 'Permanent shuffle'"
 integrations-source = "revanced/revanced-integrations"
 patches-source = "revanced/revanced-patches"
 rv-brand = "rv"
+version = "auto"
 
 [Youtube-RVX-Android-6-7]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
