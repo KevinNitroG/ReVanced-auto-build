@@ -22,7 +22,6 @@ rv-brand = "rvx"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
-arch = "both"
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-dpi = "nodpi"
@@ -41,7 +40,6 @@ version = "auto"
 [Youtube-Music-ReVanced]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 app-name = "2-music-youtube"
-arch = "both"
 build-mode = "apk"
 enabled = true
 excluded-patches = "'Permanent repeat' 'Permanent shuffle'"
@@ -76,7 +74,6 @@ version = "6.20.51"
 [TikTok-Global-Musically]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
 app-name = "4-tiktok-global-musically"
-arch = "both"
 enabled = false
 integrations-source = "revanced/revanced-integrations"
 patches-source = "revanced/revanced-patches"
@@ -85,7 +82,6 @@ uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
 [TikTok-Asia-Trill]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok"
 app-name = "4-tiktok-asia-trill"
-arch = "both"
 enabled = true
 integrations-source = "revanced/revanced-integrations"
 patches-source = "revanced/revanced-patches"
@@ -111,7 +107,6 @@ rv-brand = "rv"
 [Google-Photos]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos/"
 app-name = "7-gphotos"
-arch = "both"
 integrations-source = "revanced/revanced-integrations"
 patches-source = "revanced/revanced-patches"
 rv-brand = "rv"
@@ -120,7 +115,6 @@ version = "auto"
 [Messenger]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
 app-name = "8-messenger"
-arch = "both"
 enabled = true
 excluded-patches = "'Disable typing indicator' 'Disable switching emoji to sticker'"
 integrations-source = "revanced/revanced-integrations"
