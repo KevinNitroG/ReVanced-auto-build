@@ -1,17 +1,14 @@
 Facebook (arm64-v8a): 494.1.0.56.73  
 Facebook (arm-v7a): 494.1.0.56.73  
-YouTube-ReVanced: 19.47.53  
-YouTube-ReVanced-Extended: 19.44.39  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanced YouTube and YT Music from Play Store  
 
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
-CLI: inotia00/revanced-cli-5.0.1-all.jar  
-Patches: inotia00/patches-5.2.1.rvp  
-[Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v5.2.1)
-
 CLI: j-hc/revanced-cli-5.0.0-all.jar  
-Patches: revanced/patches-5.8.0.rvp  
-[Changelog](https://github.com/revanced/revanced-patches/releases/tag/v5.8.0)  
+Patches: revanced/patches-5.8.1.rvp  
+[Changelog](https://github.com/revanced/revanced-patches/releases/tag/v5.8.1)  
+
+Skipped:  
+Patches: inotia00/patches-5.2.1.rvp    
